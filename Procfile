@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT rikkahub_mcp_server:app
+web: gunicorn -b 0.0.0.0:$PORT rikkahub_mcp_server:app
