@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:$PORT rikkahub_mcp_server:app
+web: gunicorn --bind 0.0.0.0:$PORT --timeout 120 rikkahub_mcp_server:app
