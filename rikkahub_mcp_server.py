@@ -118,6 +118,5 @@ def health():
 
 if __name__ == "__main__":
     # 本地测试才走这里，Railway 部署不会走这里
-    # 这才是正确的写法！
     port = int(os.environ.get("PORT", 8080))
-    app.run(host='0.0.0.0', port=port)run()
+    app.run(host='0.0.0.0', port=port)
